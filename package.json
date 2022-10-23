@@ -1,0 +1,20 @@
+{
+  "name": "better-markdown",
+  "displayName": "Better Markdown",
+  "description": "Extend Markdown with neat templates & HTML",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.72.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "markdown",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}
