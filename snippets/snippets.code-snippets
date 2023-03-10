@@ -1,1 +1,194 @@
-{}
+{
+	"Embed media": {
+		"prefix": [
+			"img",
+			"image"
+		],
+		"body": [
+			"![$1](${CLIPBOARD}){width=${2:400}}",
+			"$0"
+		],
+		"description": "Embedding scalable image into markdown w/ HTML"
+	},
+/* 	"Embed media": {
+		"prefix": [
+			"{",
+			"width"
+		],
+		"body": [
+			"{width=${1:400}}",
+			"$0"
+		],
+		"description": "Extended syntax: image width"
+	}, */
+
+	"Center justify text (HTML)": {
+		"prefix": [
+			"center",
+		],
+		"body": [
+			"<center>$1</center>",
+		],
+		"description": "Centering plain text in markdown w/ HTML"
+	},
+
+	"Columns (HTML)": {
+		"prefix": [
+			"col",
+		],
+		"body": [
+			"<table style='width: 100%'>",
+			"<td>",
+			"$1",
+			"</td><td>",
+			"$2",
+			"</td><td>",
+			"$3",
+			"</td>",
+			"</table>"
+		],
+		"description": "Centering plain text in markdown w/ HTML"
+	},
+
+	"Insert URL": {
+		"prefix": [
+			"url",
+			"link",
+		],
+		"body": [
+			"[${1:Title}](${CLIPBOARD})$0"
+		],
+		"description": "Insert link from clipboard"
+	},
+
+	"Insert quote/citation": {
+		"prefix": [
+			"quote",
+			"cite"
+		],
+		"body": [
+			"> \"$1\"",
+			"",
+			"ㅤㅤ— ${2:Jane Doe}",
+			"$0"
+		],
+	},
+
+// ———————————————————————————————————————————————————————————
+
+	"Header: idea": {
+		"prefix": [
+			"idea"
+		],
+		"body": [
+			"---",
+			"type: idea",
+			"---",
+			"",
+			"# 💡 **${1:$TM_FILENAME_BASE}**",
+			"$0"
+		],
+	},
+	"Header: question": {
+		"prefix": [
+			"question"
+		],
+		"body": [
+			"---",
+			"type: question",
+			"---",
+			"",
+			"# ❔ **${1:$TM_FILENAME_BASE}**",
+			"$0"
+		],
+	},
+	
+	"Header: issue": {
+		"prefix": [
+			"issue"
+		],
+		"body": [
+			"---",
+			"type: issue",
+			"---",
+			"",
+			"# ❕ **${1:$TM_FILENAME_BASE}**",
+			"$0"
+		],
+	},
+	"Header: premise": {
+		"prefix": [
+			"premise"
+		],
+		"body": [
+			"---",
+			"type: premise",
+			"---",
+			"",
+			"# 💭 **${1:$TM_FILENAME_BASE}**",
+			"$0"
+		],
+	},
+
+/* ———————————————————————————————————————————————————————————
+
+	"Insert colored text (HTML)": {
+		"prefix": [
+			"color"
+		],
+		"body": [
+			"<span style=\"color:${1|gray,khaki,salmon,lightgreen,aquamarine|}\">$2</span>$0"
+		],
+		"description": "Color styling for text in markdown w/ HTML"
+	},
+
+	"Insert warning/alert (HTML)": {
+		"prefix": [
+			"!!",
+			"warn",
+			"alert"
+		],
+		"body": [
+			"> ❗ <span style=\"color:salmon\">$1</span>$0"
+		],
+		"description": "Stylized warning/alert in HTML"
+	},
+
+	"Insert notice/caution (HTML)": {
+		"prefix": [
+			"!",
+			"notice",
+			"caution"
+		],
+		"body": [
+			"> ⚠️ <span style=\"color:khaki\">$1</span>$0"
+		],
+		"description": "Stylized notice/caution in HTML"
+	},
+
+	"Insert idea/tip/hint": {
+		"prefix": [
+			"*",
+			"idea",
+			"tip",
+			"hint"
+		],
+		"body": [
+			"> ️💡 $1"
+		],
+		"description": "Stylized idea/tip/hint"
+	},
+
+	"Insert comment/subtext (HTML)": {
+		"prefix": [
+			"//",
+			"comment",
+			"subtext"
+		],
+		"body": [
+			"##### <span style=\"color:gray\">$1</span>$0"
+		],
+		"description": "Small, unobtrusive comment/subtext in HTML"
+	},
+*/
+}
